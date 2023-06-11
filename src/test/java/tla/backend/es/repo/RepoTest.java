@@ -16,14 +16,14 @@ import org.springframework.data.elasticsearch.core.IndexOperations;
 import org.springframework.data.elasticsearch.core.convert.ElasticsearchDateConverter;
 import org.springframework.data.elasticsearch.core.mapping.IndexCoordinates;
 
-import tla.backend.App;
+import tla.backend.EsApp;
 import tla.backend.es.model.CorpusObjectEntity;
 import tla.backend.es.model.meta.Indexable;
 import tla.backend.es.model.meta.ModelConfig;
 import tla.backend.es.model.parts.EditDate;
 import tla.backend.service.EntityService;
 
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 public class RepoTest {
 
     @Autowired

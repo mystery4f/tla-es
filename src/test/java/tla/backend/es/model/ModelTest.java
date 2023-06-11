@@ -22,7 +22,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import tla.backend.App;
+import tla.backend.EsApp;
 import tla.backend.es.model.meta.BaseEntity;
 import tla.backend.es.model.meta.Indexable;
 import tla.backend.es.model.meta.LinkedEntity.Relations;
@@ -52,7 +52,7 @@ import tla.domain.model.meta.AbstractBTSBaseClass;
 import tla.domain.model.meta.BTSeClass;
 import tla.domain.util.IO;
 
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 public class ModelTest {
 
     private ObjectMapper mapper = new ObjectMapper();

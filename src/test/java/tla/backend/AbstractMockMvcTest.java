@@ -8,7 +8,7 @@ import org.springframework.test.web.servlet.MockMvc;
 /**
  * Brings an auto-configured {@link MockMvc} object.
  */
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 @AutoConfigureMockMvc
 public abstract class AbstractMockMvcTest {
 

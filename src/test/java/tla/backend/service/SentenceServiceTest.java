@@ -26,7 +26,7 @@ import org.springframework.data.elasticsearch.core.SearchHits;
 import org.springframework.data.elasticsearch.core.SearchHitsImpl;
 import org.springframework.data.elasticsearch.core.TotalHitsRelation;
 
-import tla.backend.App;
+import tla.backend.EsApp;
 import tla.backend.Util;
 import tla.backend.es.model.AnnotationEntity;
 import tla.backend.es.model.SentenceEntity;
@@ -42,7 +42,7 @@ import tla.domain.dto.extern.SearchResultsWrapper;
 import tla.domain.dto.extern.SingleDocumentWrapper;
 import tla.domain.model.Language;
 
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 public class SentenceServiceTest {
 
     @MockBean

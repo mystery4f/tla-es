@@ -12,14 +12,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import tla.backend.App;
+import tla.backend.EsApp;
 import tla.backend.es.model.AnnotationEntity;
 import tla.backend.es.model.LemmaEntity;
 import tla.backend.es.model.ThsEntryEntity;
 import tla.domain.dto.meta.AbstractDto;
 import tla.domain.model.ExternalReference;
 
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 public class ServiceTest {
 
     @Autowired

@@ -23,7 +23,7 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import tla.backend.App;
+import tla.backend.EsApp;
 import tla.backend.es.model.meta.TLAEntity;
 import tla.backend.es.query.ESQueryBuilder;
 import tla.backend.service.EntityService;
@@ -34,7 +34,7 @@ import tla.domain.model.meta.BTSeClass;
 
 @Slf4j
 @TestInstance(Lifecycle.PER_CLASS)
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 public class RepoPopulatorTest {
 
     @Autowired

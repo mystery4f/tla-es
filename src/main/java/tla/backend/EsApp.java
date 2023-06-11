@@ -20,7 +20,7 @@ import tla.backend.es.repo.RepoPopulator;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration(exclude = { ElasticsearchDataAutoConfiguration.class })
-public class App implements ApplicationRunner {
+public class EsApp implements ApplicationRunner {
 
     @Autowired
     private RepoPopulator repoPopulator;
@@ -30,7 +30,7 @@ public class App implements ApplicationRunner {
 
     public static void main(String[] args) {
         log.info("startup TLA backend app");
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(EsApp.class, args);
     }
 
     @Bean

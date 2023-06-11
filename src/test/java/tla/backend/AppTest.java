@@ -6,12 +6,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest(classes = {App.class})
+@SpringBootTest(classes = {EsApp.class})
 class AppTest {
 
     @Test
     void app() {
-        App classUnderTest = new App();
+        EsApp classUnderTest = new EsApp();
         assertTrue(
             classUnderTest.getClass().isAnnotationPresent(
                 EnableAutoConfiguration.class
