@@ -13,5 +13,7 @@ tla:
     es:
         port: ${ES_PORT:9200}
         host: ${ES_HOST:localhost}
-
+spring:
+    elasticsearch:
+        connection-timeout: 10s
 ...
