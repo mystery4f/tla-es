@@ -1,0 +1,4 @@
+rootProject.name = 'tla-es'
+
+include 'tla-common'
+project(':tla-common').projectDir = file('../tla-common')
