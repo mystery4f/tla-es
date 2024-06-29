@@ -68,6 +68,13 @@ public class ObjectReference implements Resolvable, Comparable<Resolvable> {
     @Field(type = FieldType.Object, index = false)
     private List<Resolvable.Range> ranges;
 
+    public ObjectReference(String id, String eclass, String type, String name) {
+        this.id = id;
+        this.eclass = eclass;
+        this.type = type;
+        this.name = name;
+    }
+
     @Override
     public int compareTo(Resolvable arg0) {
     	//System.out.println("ID "+this.id);
